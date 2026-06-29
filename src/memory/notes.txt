@@ -1,0 +1,10 @@
+npm install express
+npm install --save-dev @types/express
+
+npm install
+
+npm run build
+
+npm test
+
+node dist/index.js
