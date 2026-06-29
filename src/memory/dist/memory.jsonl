@@ -1,5 +1,0 @@
-{"type":"entity","name":"Example Network","entityType":"network","observations":["This is the Example Network created by mohamed.m.safwat@orange.com."]}
-{"type":"entity","name":"Router1","entityType":"Device","observations":["Up since yesterday","Has software version 12.4(24)T1"]}
-{"type":"entity","name":"Office Network","entityType":"Network","observations":["IP range: 192.168.1.0/24","Contains 3 subnets"]}
-{"type":"entity","name":"Cisco IOS","entityType":"OperatingSystem","observations":["Commonly used by Cisco routers and switches"]}
-{"type":"entity","name":"Junos","entityType":"OperatingSystem","observations":["Used by JUNOS operating system"]}
