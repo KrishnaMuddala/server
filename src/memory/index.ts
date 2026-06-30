@@ -630,7 +630,7 @@ async function main() {
     await transport.handleRequest(req, res, req.body);
   });
 
-  const PORT = process.env.PORT || 8002;
+  const PORT = process.env.MEMORY_MCP_PORT || 8002;
   app.listen(PORT, () => {
     console.error(`Memory MCP Server running on http://localhost:${PORT}/mcp`);
   });

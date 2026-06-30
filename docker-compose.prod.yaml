@@ -1,0 +1,14 @@
+#local docker-compose.yaml for netops-mcp-chat application
+services:
+  memory-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: netops-memory-mcp
+    restart: unless-stopped
+    ports:
+      - "8002:8002"
+    env_file: src/memory/.env
+    environment:
+      - MEMORY_MCP_URL=http://memory-mcp:8002/mcp
+  
