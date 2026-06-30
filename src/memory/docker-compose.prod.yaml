@@ -8,7 +8,7 @@ services:
     restart: unless-stopped
     ports:
       - "8002:8002"
-    env_file: src/memory/.env
+    env_file: .env
     environment:
       - MEMORY_MCP_URL=http://memory-mcp:8002/mcp
   

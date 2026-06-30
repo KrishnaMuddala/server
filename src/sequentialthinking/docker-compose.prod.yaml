@@ -1,0 +1,14 @@
+#local docker-compose.yaml for netops-mcp-chat application
+services:
+  sequential-thinking-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: netops-sequential-thinking-mcp
+    restart: unless-stopped
+    ports:
+      - "8002:8002"
+    env_file: .env
+    environment:
+      - SEQUENTIAL_MCP_URL=http://sequential-thinking-mcp:8002/mcp
+  
