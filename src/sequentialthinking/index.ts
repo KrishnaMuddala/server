@@ -156,7 +156,7 @@ async function runServer() {
     await transport.handleRequest(req, res, req.body);
   });
 
-  const PORT = process.env.SEQUENTIAL_MCP_PORT || 8002;
+  const PORT = process.env.SEQUENTIAL_MCP_PORT || 8003;
   app.listen(PORT, () => {
     console.error(`Sequential Thinking MCP Server running on http://localhost:${PORT}/mcp`);
   });
